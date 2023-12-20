@@ -1,11 +1,8 @@
 body {
     font-family: 'Poppins';
-    margin: 0;
-    padding: 0;
     background-color: #f8f8f8;
     display: flex;
     flex-direction: column;
-    width: 100%;
     height: 100vh;
     justify-content: space-between;
 }
@@ -77,17 +74,16 @@ section {
 
 #promotionsList {
     list-style: none;
-    padding: 0;
+
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items:flex-start;
+    justify-content: space-around;
+
 }
 #promotionsList li{
-    min-width: 200px;
+
     min-height: 200px;
-    margin: 10px 10px 10px 10px;
-    justify-content: space-between;
+
 }
 #promotionsList li img{
     width: 200px;
@@ -99,13 +95,10 @@ section {
 #promotions {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    min-height: 620px;
     background-color: rgba(255, 204, 0, 0.2);
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 #feedbackList {
