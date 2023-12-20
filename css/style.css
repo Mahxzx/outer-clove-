@@ -143,3 +143,7 @@ footer{
     justify-content: center;
 
 }
+
+#main {
+    height: 800px;
+}
