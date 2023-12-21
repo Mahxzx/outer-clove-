@@ -1,45 +1,56 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Login Page</title>
+    <script defer src="js/script.js"></script>
+    <title>Menu</title>
 </head>
 <body>
     <header>
         <nav>
             <h1>The Outer Clove Restuarant</h1>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                
-                
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#promotions">Promotions</a></li>
+                <li><a href="#feedback">Feedback</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="nav/login.html">Login</a></li>
-                
-                
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="branches.html">Branches</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="main">
-        <form>
-            <select id="userType" name="userType" placeholder="Usertype">
-                <option value="customer">Customer</option>
-                <option value="admin">Admin</option>
-            </select>
+    <section id="MenuList">
+        <h2>Menu</h2>
+        <ul class="menu-items">
+            <li class="menu-item">
+                <img src="/images/item1.jpeg" alt="Item 1" class="menu-image">
+                <h3>Item 1</h3>
+                <p>Description of Item 1.</p>
+                <p>Price: $10.99</p>
+            </li>
+            <li class="menu-item">
+                <img src="/images/item2.jpeg" alt="Item 2" class="menu-image">
+                <h3>Item 2</h3>
+                <p>Description of Item 2.</p>
+                <p>Price: $12.99</p>
+            </li>
+            <li class="menu-item">
+                <img src="/images/item3.jpg" alt="Item 3" class="menu-image">
+                <h3>Item 3</h3>
+                <p>Description of Item 3.</p>
+                <p>Price: $7.99</p>
+            </li>
+            <!-- Add more items as needed -->
+        </ul>
 
-            
-            <input type="text" id="username" name="username" required placeholder="Username">
+    </section>
 
-            <input type="password" id="password" name="password" required placeholder="Password">
-
-            <button type="submit">Login</button>
-
-            <p>Don't have an account? <a href="#">Create Account</a></p>
-        </form>
-
-    </main>
+   
 
     <section id="contact">
         <h2>Contact</h2>
