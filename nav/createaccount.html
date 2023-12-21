@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Login Page</title>
+    <title>Create New account</title>
 </head>
 <body>
     <header>
@@ -24,22 +24,22 @@
 
     <main id="main">
         <form>
-            <select id="userType" name="userType" placeholder="Usertype">
+            <select id="userType" name="userType" required>
                 <option value="customer">Customer</option>
                 <option value="admin">Admin</option>
             </select>
-
+            <input type="text" id="fullname" name="full name" required placeholder="Full Name">
             
+            <input type="text" id="email" name="email" required placeholder="Email">
+
             <input type="text" id="username" name="username" required placeholder="Username">
 
             <input type="password" id="password" name="password" required placeholder="Password">
 
-            <button type="submit">Login</button>
-            <a href="adminDashboard.html">AdminDash</a>
-            <a href="customerDashboard.html">CustomDash</a>
-            <p>Don't have an account? <a href="/nav/createaccount.html">Create Account</a></p>
-        </form>
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confrim Password">
 
+            <button type="submit">Create Account</button>
+        </form>
     </main>
 
     <section id="contact">
