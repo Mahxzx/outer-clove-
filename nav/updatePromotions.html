@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <script defer src="/js/script.js"></script>
+    <title>Promotions</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>The Outer Clove Restuarant</h1>
+            <ul>
+                <li><a href="adminDashboard.html">Back</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="/index.html">Logout</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <!-- Section 1: Display the current promotions -->
+    <section id="promotionlist">
+        <table id="promotionsTable">
+            <thead>
+                <tr>
+                    <th>PID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Link</th>
+                    <th>Image</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="promotionTableBody"></tbody>
+        </table>
+    </section>
+
+    <!-- Section 2: Add Promotion -->
+    <section id="addpromotion">
+        <h2>Add Promotion</h2>
+        <form id="newpromotion">
+            <label for="pid">PID:</label>
+            <input type="text" id="pid" name="pid" required>
+            
+            <label for="ptitle">Title:</label>
+            <input type="text" id="ptitle" name="ptitle" required>
+            
+            <label for="pdescription">Description:</label>
+            <input type="text" id="pdescription" name="pdescription" required>
+            
+            <label for="plink">Link:</label>
+            <input type="text" id="plink" name="plink" required>
+            
+            <label for="pimage">Image URL:</label>
+            <input type="text" id="pimage" name="pimage" required>
+            
+            <button type="button" onclick="addPromotion()">Add Promotion</button>
+        </form>
+    </section>
+    
+
+   
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul>
+            <li><strong>Address:</strong> 123 Main Street, Cityville</li>
+        <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+        <li><strong>Email:</strong> info@example.com</li>
+        <li><strong>Opening Hours:</strong> Monday to Saturday, 9:00 AM - 8:00 PM</li>
+        </ul>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2591.652075428758!2d-117.29785838833408!3d49.49107885585602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537cb6a67b4952a1%3A0xe9628c94e2a00cb3!2sOuter%20Clove%20Restaurant!5e0!3m2!1sen!2slk!4v1703061513068!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 The Outer Clove Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

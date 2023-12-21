@@ -1,6 +1,6 @@
 {
     "overview": "Welcome to The Outer Clove Restaurant. We strive to provide a unique dining experience...",
-    "promotions": [
+    "promotions1": [
         {"text": "Special Lunch Buffet - 20% off", "image": "/images/image1.jpg"},
         {"text": "Happy Hour - Buy one get one free", "image": "/images/image2.jpg"},
         {"text": "Weekend Dinner Specials", "image": "/images/image3.jpg"}
@@ -9,5 +9,32 @@
         "Great service! Loved the ambiance.",
         "The food was delicious. Will definitely come again.",
         "Friendly staff and quick service."
+    ],
+    
+    "promotions": [
+        {
+            "pid": "P001",
+            "ptitle": "Special Lunch Buffet - 20% off",
+            "pdescription": "Enjoy a special lunch buffet with a 20% discount.",
+            "plink": "https://example.com/lunch-buffet",
+            "pimage": "https://example.com/images/lunch-buffet.jpg"
+        },
+        {
+            "pid": "P002",
+            "ptitle": "Happy Hour - Buy one get one free",
+            "pdescription": "Join us for Happy Hour and get a free drink with your purchase.",
+            "plink": "https://example.com/happy-hour",
+            "pimage": "https://example.com/images/happy-hour.jpg"
+        },
+        {
+            "pid": "P003",
+            "ptitle": "Weekend Dinner Specials",
+            "pdescription": "Indulge in our special dinner menu on weekends.",
+            "plink": "https://example.com/weekend-dinner",
+            "pimage": "https://example.com/images/weekend-dinner.jpg"
+        }
     ]
+
+
 }
+

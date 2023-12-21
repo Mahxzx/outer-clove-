@@ -4,18 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Create New account</title>
+    <title>Manage Profile Details</title>
 </head>
 <body>
     <header>
         <nav>
             <h1>The Outer Clove Restuarant</h1>
             <ul>
-                <li><a href="../index.html">Home</a></li>
-                
-                
+                <li><a href="adminDashboard.html">Dashboard</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html">Logout</a></li>
                 
                 
             </ul>
@@ -24,22 +22,25 @@
 
     <main id="main">
         <form>
-            <select id="userType" name="userType" required>
+            <select id="userType" name="userType" required disabled>
                 <option value="customer">Customer</option>
                 <option value="admin">Admin</option>
             </select>
             <input type="text" id="fullname" name="full name" required placeholder="Full Name">
             
-            <input type="email" id="email" name="email" required placeholder="Email">
+            <input type="email" id="email" name="email" required placeholder="Email" disabled>
 
-            <input type="text" id="username" name="username" required placeholder="Username">
+            <input type="text" id="username" name="username" required placeholder="Username" disabled>
+            
+            <input type="password" id="currentPassword" name="Current Password" required placeholder="Current Password">
 
             <input type="password" id="password" name="password" required placeholder="Password">
 
-            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confrim Password">
+            <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm Password">
 
-            <button type="submit">Create Account</button>
+            <button type="submit">Update Profile</button>
         </form>
+
     </main>
 
     <section id="contact">
@@ -56,5 +57,23 @@
     <footer>
         <p>&copy; 2023 The Outer Clove Restaurant. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Assume you have user details available in the following format
+            const userDetails = {
+                userType: 'admin',
+                fullName: 'John Doe', // Example current full name
+                email: 'john.doe@example.com', // Example current email
+                username: 'johndoe', // Example current username
+            };
+
+            // Display current details as placeholders
+            document.getElementById('userType').value = userDetails.userType;
+            document.getElementById('fullname').placeholder = userDetails.fullName;
+            document.getElementById('email').placeholder = userDetails.email;
+            document.getElementById('username').placeholder = userDetails.username;
+        });
+    </script>
 </body>
 </html>
